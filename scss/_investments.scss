@@ -1,0 +1,20 @@
+.our-portfolio{
+
+    h4{
+        font-weight: bold;
+        @include media-lg{
+            font-size: 60px;
+        }
+    }
+    @include media-lg{
+        margin: 70px 140px;
+    }
+    @include media-xl{
+        margin: 70px 140px;
+    }
+    @include media-xs{
+        .investment-card__logo{
+            display: none;
+        }
+    }
+}

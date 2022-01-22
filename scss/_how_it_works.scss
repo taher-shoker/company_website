@@ -1,0 +1,186 @@
+.top-banner{
+    @include media-lg{
+        margin: 70px 245px;
+    }
+    @include media-xl{
+        margin: 70px 245px;
+        .step{
+            width: 100%;
+            padding: 10px 20px;
+          
+        }
+        .first{
+            &::before{
+                width: 105px;
+            }
+        }
+        .second{
+           
+                @include media-xl{
+                    &::before{
+                    width: 30px !important;
+                    left: -15px !important;
+                }
+             
+            }
+            &::after{
+                width: 30px;
+                right: -15px;
+            }
+        }
+        .third{
+            &::after{
+                width: 105px;
+            }
+        }
+      
+    }
+   
+    @include media-md{
+        margin: 25px 50px;
+        .step{
+            width: 50%;
+            padding: 10px;
+            min-height: auto;
+            background-color: #fff;
+        }
+    }
+    @include media-xs{
+        .step{
+            width: 100%;
+            padding: 10px;
+            min-height: auto;
+            background-color: #fff;
+            
+            h5{
+                font-size: 20px;
+            }
+        }
+    }
+    h4{
+        font-weight: normal;
+        margin-bottom: 16px;
+    }
+    p{
+        font-size: 14px;
+    }
+   
+}
+
+.investment-Journey{
+    @include media-md{
+        padding: 60px 30px;
+    
+    }
+
+    @include media-lg{
+        padding: 125px $padding-box-lg - 15px;
+    
+    }
+    @include media-xl{
+        padding: 125px $padding-box-lg - 15px;
+    
+    }
+      padding: 60px 10px;
+
+      .invest-img{
+        width: 100%;
+        background-color: #DAE6F0;
+        padding: 30px;
+        text-align: center;
+        margin: 0 auto;
+        @include media-lg{
+            width: 70%;
+        }
+        @include media-xl{
+            width: 70%;
+        }
+        @include media-md{
+            width: 70%;
+        }
+          img{
+              width: 100%;
+            @include media-lg{
+                width: auto;
+               
+            }
+            
+          }
+      }
+      .invest-text{
+          margin-top: 15px;
+          h6{
+              font-size: 24px;
+              font-weight: bolder;
+              @include media-md{
+                font-size: 20px;
+              }
+          }
+          p{
+              color: $fourth-color;
+          }
+      }
+      a{
+          width: 100%;
+          padding: 17px 0;
+      }
+}
+.benfites{
+    background-color: #f2f2f2;
+    @include media-lg{
+        background-color: #fff;
+    }
+    @include media-xl{
+        background-color: #fff;
+    }
+    h6{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    p{
+        font-size: 18px;
+        color: $fourth-color;
+    }
+}
+.related-qu{
+    background-color: $third-color;
+    @include media-md{
+        padding: 125px 50px;
+    }
+    h4{
+        color: #fff;
+        @include media-md{
+            text-align: left;
+           
+        }
+    }
+    a{
+        color: #fff;
+        width: 100%;
+        margin: 30px auto;
+        padding: 17px 0;
+    }
+    ul{
+        list-style-type: disc;
+        margin: 0 20px;
+        @include media-md{
+            margin-left: -37px;
+        }
+        @include media-xs{
+            margin: 0 20px;
+        }
+        li{
+            width: 100%;
+            text-align: left;
+            list-style-type: disc;
+            display: revert;
+            height: auto;
+            span{
+                margin-left: 5px;
+            }
+            i{
+                float: right;
+            }
+        }
+    }
+}

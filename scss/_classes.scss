@@ -1,0 +1,23 @@
+.mt-16{
+    margin-top: 16%;
+}
+.p-sm-0{
+    @include media-xs{
+        padding: 0;
+    } 
+}
+.mt-md-100{
+    @include media-md{
+        margin-top: 100%;
+    }   
+}
+.mt-xs-130{
+    @include media-xs{
+        margin-top: 130%;
+    }   
+}
+.width-40{
+    @include media-md{
+        width: 40% !important;
+    }  
+}

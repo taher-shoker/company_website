@@ -1,0 +1,21 @@
+.submit-property{
+    h1{
+        font-weight: bold;
+        @include media-md{
+            font-size: 25px ;
+        }
+        @include media-xs{
+            font-size: 25px ;
+        }
+    }
+    h5{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    li{
+        flex-direction: column;
+    }
+    small{
+        color: #989697;
+    }
+}

@@ -1,0 +1,75 @@
+
+.form{
+    background-color: #F2F2F2;
+    padding: 100px;
+    @include media-md{
+        padding: 50px;
+    }
+    @include media-xs{
+        padding: 20px;
+    }
+    text-align: center;
+  
+}
+h6{
+    font-size: 30px;
+    @include media-md{
+        font-size: 21px;
+    }
+    font-weight: bold;
+}
+
+.sign-up{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #F2F2F2;
+    box-shadow: 1px 4px 10px #d4cece;
+    h5{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    a{
+        width: 100%;
+        padding: 17px 0;
+    }
+    p{
+        margin: 20px auto;
+        font-weight: 400;
+    }
+    small{
+        color: #9F9F9F;
+        font-size: 16px;
+    }
+}
+label{
+    font-size: 16px;
+    text-align: left;
+}
+textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.search-input{
+    width: 100%;
+    border: 1px solid #ADABAC;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    input{
+        border: unset;
+        height: 100%;
+        padding: 5px;
+        &:focus{
+            border: none;
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
+
+.login{
+ height:calc(100vh - 80px);
+
+}

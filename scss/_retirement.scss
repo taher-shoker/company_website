@@ -1,0 +1,199 @@
+.retirement-resources{
+    h4{
+        margin: 20px 0;
+    }
+    @include media-lg{
+        background-color: #F2F2F2;
+        margin: 0;
+        .col-lg-6{
+            padding-right: 0;
+        }
+        h4{
+            margin: 197px 240px 111px 140px;
+            p{
+                font-size: 16px;
+                line-height: 1.7;
+                margin-top: 16px;
+            }
+        }
+    }
+    @include media-xl{
+        background-color: #F2F2F2;
+        margin: 0;
+        .col-lg-6{
+            padding-right: 0;
+        }
+        h4{
+            margin: 155px 240px 155px 140px;
+            p{
+                font-size: 16px;
+                line-height: 1.7;
+                margin-top: 16px;
+            }
+        }
+    }
+    p{
+        font-size: 14px;
+        margin: 10px 0;
+    }
+   
+}
+.benefits{
+    ul{
+        margin-top: 50px;
+        li{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px auto;
+            .benefit-img{
+                width: 107px;
+                height: 107px;
+                text-align: center;
+                line-height: 107px;
+                border-radius: 50%;
+                background-color: #F2F2F2;
+              
+
+            }
+            .benefit-info{
+                width: 80%;
+                @include media-xs{
+                    width: 100%;
+                    margin-top: 20px;
+                }
+                h5{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 18px;
+                }
+            }
+            @include media-xs{
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+        }
+    }
+
+}
+.limits{
+    background-color: #F2F2F2;
+    padding: 60px 10px;
+    @include media-md{
+        padding: 60px 50px;
+      }
+    @include media-lg{
+      padding: 125px $padding-box-lg;
+    }
+    @include media-xl{
+        padding: 125px $padding-box-lg;
+      }
+    h4{
+        text-align: left;
+        @include media-md{
+            text-align: center;
+
+        }
+     
+        color: $fourth-color;
+    }
+    p{
+        width: 90%;
+        @include media-md{
+            width: 70%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    ul{
+        margin-top: 70px;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 1px 4px 10px #d4cece;
+        li{
+            &:first-of-type{
+                border-radius: 10px 10px 0 0;
+            }
+            &:last-of-type{
+                border-radius: 0 0 10px 10px;
+            }
+            &:nth-of-type(odd){
+                background-color: #ECF4F8;
+            }
+            &:nth-of-type(even){
+                background-color: #fff;
+            }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 15px;
+            align-items: flex-start;
+            @include media-md{
+                flex-direction: column;
+            }
+            h6{
+                font-weight: 400;
+                @include media-xs{
+                    font-size: 16px;
+                }
+                @include media-md{
+                    &:nth-of-type(2){
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+                @include media-lg{
+                    width: 50%;
+                    font-size: 18px;
+                }
+                @include media-xl{
+                   
+                    font-size: 18px;
+                }
+
+               
+                line-height: 1.7;
+                &:nth-of-type(2){
+                   text-align: right;
+               
+                }
+            }
+        }
+        @include media-xs{
+            margin-top: 30px;
+        }
+    }
+}
+.retirement-related-qu{
+    background: transparent;
+    h4{
+        color: #2D2926;
+        font-size: 30px;
+        text-align: left;
+
+    }
+    a{
+        color: #2D2926;
+
+    }
+    ul{
+        padding-top: 10px;
+    }
+}
+
+.help{
+    background: $third-color;
+    p{
+        width: 95%;
+        margin: 10px auto;
+        color: #fff;
+        font-weight: 100;
+    }
+    strong{
+        color: #fff;
+        margin: 5px auto;
+    }
+}

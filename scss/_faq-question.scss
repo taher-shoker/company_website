@@ -1,0 +1,29 @@
+.faq-question{
+    height: 250px !important;
+}
+.faq-related{
+    padding: 70px 0;
+    h3{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    a{
+        color: black;
+    }
+    p{
+        width: 95%;
+        margin: 20px 0;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+        a{
+            margin: 0px ;
+        }
+    }
+    hr{
+        margin: 20px 0;
+    }
+}

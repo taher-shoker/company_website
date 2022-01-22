@@ -1,0 +1,12 @@
+.risk{
+    background-color: $third-color !important;
+    color: #C5E5FF;
+    h1{
+        @include media-lg{
+            font-size: 72px;
+        }
+    }
+    @include media-lg{
+        padding: 70px 0 !important;
+    }
+}

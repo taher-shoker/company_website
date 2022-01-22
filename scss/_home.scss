@@ -1,0 +1,206 @@
+.banner {
+  height: 635px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: 
+    url('../img/banner/banner.png');
+  background-size: cover;
+
+  &__description {
+    position: absolute;
+    width: 37%;
+    color: #fff;
+    top: 18%;
+    left: 31.5%;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include media-lg{
+      left: unset;
+      top: unset;
+      position: unset;
+      width: 100%;
+      max-width:700px ;
+    }
+    @include media-md{
+      width: 70%;
+      top: 25%;
+      left: 15%;
+    }
+    @include media-xs{
+      width: 100%;
+      left: 0;
+      top: 20%;
+    }
+ 
+    h3{
+    font-size: 60px;
+    @include media-xs{
+      font-size: 30px;
+    }
+
+  }
+  p{
+    font-size: 20px;
+    width: 80%;
+    margin: 10px auto;
+  }
+ 
+}
+&__btns{
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  margin: 0 auto;
+  
+  @include media-xs{
+    width: 100%;
+  }
+  a{
+    &:first-of-type{
+      margin-right: 15px;
+    }
+  }
+
+}
+}
+
+.text-with-image{
+  @include media-xl{
+    padding: 125px $padding-box-lg;
+
+  }
+  @include media-lg{
+    padding: 125px $padding-box-lg;
+
+  }
+
+  @include media-md{
+    padding: 90px 30px;
+  }
+  padding: 60px 10px;
+  .text-holder{
+    margin: 20px auto;
+    @include media-xl{
+      padding-left: $padding-box-lg;
+
+    }
+    @include media-lg{
+      padding-left: 0;
+    }
+    ul{
+      padding: 10px 0;
+      li {
+        display: flex;
+        font-size: 18px;
+        margin: 10px auto; 
+        align-items: center;
+        i {
+          color: $third-color;
+          margin-right: 15px;
+        }
+      }
+    }
+    a{
+      padding: 17px 0;
+      width: 100%;
+      @include media-xl{
+        width: 40%;
+      }
+    }
+  }
+  img{
+    @include media-xl{
+      height: 100%;
+    }
+    @include media-lg{
+     object-fit: cover;
+     height: 100%;
+    }
+  
+  }
+}
+
+.what-unique{
+  background-color: #F1FAFE;
+  color: #040404;
+  padding: 125px 0;
+  h4{
+    text-align: center;
+    color: #040404;
+  }
+  p{
+    width: 65%;
+    margin: 25px auto;
+    font-weight: 400;
+    text-align: center;
+  }
+  ul{
+    padding-top: 20px;
+    li{
+      display: flex;
+      margin: 20px auto;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 30px auto;
+      height: 200px;
+      @include media-xl{
+        flex-direction: row;
+        height: auto;
+      }
+      @include media-lg{
+        flex-direction: row;
+        height: auto;
+      }
+
+      span{
+        margin-left: 50px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      img{
+        object-fit: contain;
+       
+        
+      }
+    }
+  }
+}
+.how-it-work{
+  margin: 60px 20px;
+  @include media-xl{
+    margin: 125px $padding-box-lg + 80px;
+
+  }
+  @include media-lg{
+    margin: 125px $padding-box-lg + 80px;
+
+  }
+  .link{
+    width: 100%;
+    margin: 30px auto;
+    padding: 17px 0;
+  }
+ 
+}
+.investments{
+  @include media-xl{
+    padding: 125px $padding-box-lg;
+
+  }
+  @include media-lg{
+    padding: 125px $padding-box-lg - 50px;
+
+  }
+  padding: 90px 30px;
+  background-color:$secondary-color ;
+  a{
+    width: 100%;
+    padding: 17px 0;
+  }
+}

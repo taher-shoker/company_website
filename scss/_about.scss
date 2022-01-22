@@ -1,0 +1,299 @@
+.real-estate{
+    margin: 20px 0px;
+    h4{
+        margin: 20px 0;
+        @include media-xs{
+            font-size: 14px;
+
+        }
+    }
+    @include media-md{
+        margin: 20px 30px;
+ 
+    }
+    @include media-xl{
+        background-color: #DAE6F0;
+        margin: 0;
+        .col-lg-6{
+            padding-right: 0;
+        }
+        h4{
+            margin: 197px 240px 197px 140px;
+        }
+    }
+    @include media-lg{
+        background-color: #DAE6F0;
+        margin: 0;
+        .col-lg-6{
+            padding-right: 0;
+        }
+        h4{
+            margin: 197px 240px 197px 140px;
+        }
+        img{
+            height: 100%;
+          
+        }
+    }
+  
+  
+ 
+}
+.icons{
+    text-align: center;
+    @include media-lg{
+        padding-bottom: 125px;
+   
+    }
+    @include media-xl{
+        padding-bottom: 125px;
+   
+    }
+    padding-bottom: 60px;
+    .box-icon{
+        margin: 20px auto;
+    }
+    h3{
+        @include media-xs{
+            font-size: 50px ;
+        }
+      
+        @include media-xl{
+            font-size: 60px;
+        }
+        @include media-lg{
+            font-size: 60px;
+        }
+      
+        font-weight: bold;
+    }
+}
+.why-invest{
+    background-color: #7ACBF2;
+    h4{
+        color:#fff
+    }
+    .step{
+        background-color: #fff;
+        width: 100%;
+        padding: 40px 24px;
+        align-items: center;
+        min-height: 385px;
+        height: 385px;
+        .step__img{
+            background-color: transparent;
+        } 
+        h5{
+            color: #040404;
+        }
+       p{
+           width: 100%;
+       } 
+    }
+}
+.who-we-are{
+    p{
+        margin: 20px auto;
+        font-size: 19px;
+    }
+}
+.executive-team {
+    padding: 60px 10px;
+    background-color: $third-color;
+    color: #fff;
+    h4{
+        color: #fff;
+    }
+    @include media-md{
+        padding: 60px 50px;
+
+    }
+    @include media-xl{
+        padding: 125px 140px;
+
+    }
+    @include media-lg{
+        padding: 125px 140px;
+
+    }
+    p{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+   
+}
+.card{
+    margin: 20px 0;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    .card-body{
+        border-left: 1px solid #DAE6F0;
+        border-right: 1px solid #DAE6F0;
+        border-bottom: 1px solid #DAE6F0;
+        border-radius: 0 0 20px 20px;
+        .card-title{
+         
+            color: $fourth-color;
+            font-weight: bold;
+            text-align: center;
+        }
+        p{
+            font-size: 17px;
+            color: $fourth-color;
+            margin: 0;
+        }
+    }
+    .description{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background-color: #fff;
+        color: $fourth-color;
+        opacity: .97;
+        padding:  15px ;
+        border: 1px solid #E0DFE0;
+        display: none;
+        @include media-xl{
+            padding: 56px 20px 24px 24px;
+        }
+        @include media-lg{
+            padding: 25px;
+        }
+
+        h6{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 15px;
+            text-align: left;
+            letter-spacing: .12px;
+            font-weight: normal;
+            margin-bottom:20px ;
+
+            text-overflow: ellipsis;
+            overflow: hidden;  
+            height: 6.2em;
+            white-space: normal;
+            @include media-xl{
+                height: unset;
+                overflow: unset;
+            }
+           
+        }
+    }
+    &:hover .description{
+        display: block;
+    }
+ 
+}
+.industry{
+    p{
+        width: 77%;
+        @include media-xs{
+            width: 100%;
+        }
+    }
+}
+.our-story{
+ position: relative;
+
+   .col-lg-5{
+       @include media-xl{
+        &:nth-child(even){
+            margin-top: 200px;
+            margin-left: 200px;
+        }
+       }
+       @include media-lg{
+        &:nth-child(even){
+            margin-top: 95px;
+            margin-left: 180px;
+        }
+       }
+  
+   }
+    .story{
+       
+        margin: 20px auto;
+        @include media-md{
+            width: 80%;
+        }
+        border: 1px solid #DAE6F0;
+       
+        &__img{
+            padding: 20px;
+        }
+        .card-title{
+            font-weight: bold;
+        }
+    }
+    .line{
+        display: none;
+        height: 60%;
+        width: 17px;
+        position: absolute;
+        background-color: #F2F2F2;
+        top: 18%;
+        left: 47.5%;
+        ul{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            li{
+               
+                &:nth-of-type(odd){
+                   &::after{
+                       content: '';
+                       width: 80px;
+                       height: 3px;
+                       background-color: #F2F2F2;
+                       position: absolute;
+                       top: 50%;
+                       left: -80px;
+                   }
+                }
+                &:nth-of-type(even){
+                    &::after{
+                        content: '';
+                        width: 80px;
+                        height: 3px;
+                        background-color: #F2F2F2;
+                        position: absolute;
+                        top: 50%;
+                        right: -80px;
+                    }
+                 }
+                position: relative; 
+                width: 40px;
+                height: 40px;
+                background-color: #fff;
+                border: 3px solid #F2F2F2;
+                border-radius: 50%;
+                
+            }
+        }
+        @include media-xl{
+            display: block;
+            left: 47.5%;
+        }
+        @include media-lg{
+            display: block;
+            left: 49%;
+        }
+
+
+    }
+}
+.text-about{
+    p{
+        font-size: 18px;
+    }
+}
